@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678100700789",
+    "project_id": "prog-vpn",
+    "storage_bucket": "prog-vpn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678100700789:android:dbee1c91524eda62cdb23c",
+        "android_client_info": {
+          "package_name": "com.example.openVpnDemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678100700789-bkmsv0ett53i1ls85rb4obs4p5302hj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxKlYhq6_-WwBKMkWao84aCkO-Kt2oY0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678100700789-bkmsv0ett53i1ls85rb4obs4p5302hj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
