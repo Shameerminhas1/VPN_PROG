@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vpn_prog/screens/forget.dart';
 import 'package:vpn_prog/screens/home_screen.dart';
 import 'package:vpn_prog/screens/welcomescreen.dart';
 import 'register.dart';
-import 'package:get/get.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
@@ -15,7 +15,6 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   final _key = GlobalKey<FormState>();
-
   //fb auth
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -24,7 +23,7 @@ class _SignInState extends State<SignIn> {
   String? emailError;
   String? passwordError;
 
-  void SignIn(String emailControl, String passControl) async {
+  void signIn(String emailControl, String passControl) async {
     if (_key.currentState!.validate()) {
       try {
         await _auth.signInWithEmailAndPassword(
@@ -155,7 +154,7 @@ class _SignInState extends State<SignIn> {
                                 emailError = null;
                                 passwordError = null;
                               });
-                              SignIn(emailController.text,
+                              signIn(emailController.text,
                                   passwordController.text);
                             },
                             child: const Text(

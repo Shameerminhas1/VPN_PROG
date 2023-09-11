@@ -3,8 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DeleteScreen extends StatelessWidget {
   Future<void> deleteItem(DocumentSnapshot product) async {
-    final docRef =
-        FirebaseFirestore.instance.collection('products').doc(product.id);
+    // CollectionReference productCollection =
+    //     FirebaseFirestore.instance.collection('products');
+    final docRef = FirebaseFirestore.instance.collection('products').doc(product.id);
+    //productCollection.doc(product.id);
     await docRef.delete();
   }
 
