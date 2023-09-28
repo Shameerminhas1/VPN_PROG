@@ -6,7 +6,7 @@ import 'package:vpn_prog/screens/dsplashscreen.dart';
 import 'package:vpn_prog/screens/forget.dart';
 import 'package:vpn_prog/screens/register.dart';
 import 'package:vpn_prog/screens/signin.dart';
-import 'package:vpn_prog/screens/textbox.dart';
+
 import 'package:vpn_prog/screens/update.dart';
 import 'package:vpn_prog/screens/viewproduct.dart';
 import 'package:vpn_prog/screens/welcomescreen.dart';
@@ -27,7 +27,6 @@ Future<void> main() async {
       'signin': (context) => SignIn(),
       'dashboard': (context) => Dashboard(),
       'forget': (context) => ForgetWindow(),
-      'textbox': (context) => TextBox(),
       'random': (context) => MyHomePage(),
       'viewproduct': (context) => ViewProductsScreen(),
       'deleteproduct': (context) => DeleteScreen(),

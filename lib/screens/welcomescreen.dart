@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vpn_prog/screens/homefree.dart';
 import 'package:vpn_prog/screens/signin.dart';
-import 'package:vpn_prog/screens/textbox.dart';
+
 import 'package:vpn_prog/random.dart';
 
 class WelcomeSCreen extends StatefulWidget {
