@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: 300,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/connected.png'),

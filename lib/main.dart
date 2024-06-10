@@ -6,7 +6,6 @@ import 'package:vpn_prog/screens/dsplashscreen.dart';
 import 'package:vpn_prog/screens/forget.dart';
 import 'package:vpn_prog/screens/register.dart';
 import 'package:vpn_prog/screens/signin.dart';
-
 import 'package:vpn_prog/screens/update.dart';
 import 'package:vpn_prog/screens/viewproduct.dart';
 import 'package:vpn_prog/screens/welcomescreen.dart';
