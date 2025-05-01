@@ -39,9 +39,9 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/connected.png'),
-            fit: BoxFit.contain,
-          ),
+              image: AssetImage('assets/images/connected.png'),
+              fit: BoxFit.contain,
+              opacity: 0.6),
         ),
         child: Center(
           child: Column(
@@ -89,7 +89,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                 ),
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                    horizontal: 20,
+                    horizontal: 5,
                   ),
                   child: Column(
                     children: [
@@ -118,13 +118,13 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                                 Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
-                                          color: Colors.grey, width: 2.0),
+                                          color: Colors.blue, width: 2.0),
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     height: MediaQuery.of(context).size.height *
-                                        0.089,
+                                        0.079,
                                     width: MediaQuery.of(context).size.width *
-                                        0.42,
+                                        0.45,
                                     child: Row(
                                       children: [
                                         const Padding(
@@ -135,7 +135,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                                           height: MediaQuery.of(context)
                                                   .size
                                                   .height *
-                                              0.035,
+                                              0.027,
                                         ),
                                         const SizedBox(
                                           height: 10,
@@ -173,22 +173,22 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                                         )
                                       ],
                                     )),
-                                const SizedBox(width: 20),
+                                const SizedBox(width: 15),
                                 Column(
                                   children: [
                                     Container(
                                         decoration: BoxDecoration(
                                           border: Border.all(
-                                              color: Colors.grey, width: 2.0),
+                                              color: Colors.blue, width: 2.0),
                                           borderRadius:
                                               BorderRadius.circular(10.0),
                                         ),
                                         height:
                                             MediaQuery.of(context).size.height *
-                                                0.089,
+                                                0.075,
                                         width:
                                             MediaQuery.of(context).size.width *
-                                                0.42,
+                                                0.45,
                                         child: Row(
                                           children: [
                                             Image.asset(
@@ -196,9 +196,9 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                                                 height: MediaQuery.of(context)
                                                         .size
                                                         .height *
-                                                    0.035),
+                                                    0.027),
                                             const SizedBox(
-                                              height: 10,
+                                              height: 2,
                                             ),
                                             Column(
                                               children: [
@@ -260,7 +260,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                   ),
                   child: Container(
                     child: CircleAvatar(
-                      radius: 81,
+                      radius: 85,
                       child: Container(
                         child: Column(
                           children: [
@@ -270,9 +270,9 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                                 backgroundColor: Colors.white,
                                 padding: EdgeInsets.only(
                                   top:
-                                      MediaQuery.of(context).size.height * 0.11,
-                                  bottom:
-                                      MediaQuery.of(context).size.height * 0.1,
+                                      MediaQuery.of(context).size.height * 0.10,
+                                  bottom: MediaQuery.of(context).size.height *
+                                      0.070,
                                   right:
                                       MediaQuery.of(context).size.width * 0.1,
                                   left: MediaQuery.of(context).size.width * 0.1,
@@ -300,7 +300,19 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 40,
+              ),
+              Column(
+                children: [
+                  Text(
+                    "Time Elapsed",
+                    style:
+                        TextStyle(color: Colors.blueAccent, letterSpacing: 2),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 4,
               ),
               Column(
                 children: [
@@ -311,7 +323,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 27,
               ),
               if (_selectedVpn != null)
                 Padding(
@@ -320,7 +332,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                     left: MediaQuery.of(context).size.width * 0.415,
                   ),
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.08,
+                    height: MediaQuery.of(context).size.height * 0.065,
                     width: MediaQuery.of(context).size.width * 0.0001,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -338,7 +350,7 @@ class _HomeScreenFreeState extends State<HomeScreenFree> {
                 ),
 
               SizedBox(
-                height: 2,
+                height: 27,
               ),
               TextButton(
                 onPressed: () async {

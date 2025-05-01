@@ -89,6 +89,8 @@ class _WelcomeSCreenState extends State<WelcomeSCreen> {
           ),
           Container(
             child: ElevatedButton(
+              style:
+                  ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),
               onPressed: () {
                 Navigator.push(
                     context,
