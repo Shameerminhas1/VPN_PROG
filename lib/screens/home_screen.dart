@@ -37,12 +37,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: 300,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/connected.png'),
-            fit: BoxFit.contain,
-          ),
+              image: AssetImage('assets/images/connected.png'),
+              fit: BoxFit.contain,
+              opacity: 0.6),
         ),
         child: Center(
           child: Column(
@@ -57,18 +56,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // Material(
-                    //   color: Colors.transparent,
-                    //   child: InkWell(
-                    //     onTap: () {
-                    //       Navigator.pushNamed(context, 'dashboard');
-                    //     },
-                    //     child: const Icon(
-                    //       Icons.dashboard,
-                    //       color: Colors.blue,
-                    //     ),
-                    //   ),
-                    // ),
                     Material(
                       color: Colors.transparent,
                       child: InkWell(
@@ -90,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                    horizontal: 20,
+                    horizontal: 15,
                   ),
                   child: Column(
                     children: [
@@ -119,13 +106,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Container(
                                     decoration: BoxDecoration(
                                       border: Border.all(
-                                          color: Colors.grey, width: 2.0),
+                                          color: Colors.blue, width: 2.0),
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     height: MediaQuery.of(context).size.height *
-                                        0.089,
+                                        0.075,
                                     width: MediaQuery.of(context).size.width *
-                                        0.42,
+                                        0.45,
                                     child: Row(
                                       children: [
                                         const Padding(
@@ -136,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           height: MediaQuery.of(context)
                                                   .size
                                                   .height *
-                                              0.035,
+                                              0.027,
                                         ),
                                         const SizedBox(
                                           height: 10,
@@ -174,22 +161,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                         )
                                       ],
                                     )),
-                                const SizedBox(width: 20),
+                                const SizedBox(width: 5),
                                 Column(
                                   children: [
                                     Container(
                                         decoration: BoxDecoration(
                                           border: Border.all(
-                                              color: Colors.grey, width: 2.0),
+                                              color: Colors.blue, width: 2.0),
                                           borderRadius:
                                               BorderRadius.circular(10.0),
                                         ),
                                         height:
                                             MediaQuery.of(context).size.height *
-                                                0.089,
+                                                0.075,
                                         width:
                                             MediaQuery.of(context).size.width *
-                                                0.42,
+                                                0.45,
                                         child: Row(
                                           children: [
                                             Image.asset(
@@ -197,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 height: MediaQuery.of(context)
                                                         .size
                                                         .height *
-                                                    0.035),
+                                                    0.027),
                                             const SizedBox(
                                               height: 10,
                                             ),
@@ -261,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   child: Container(
                     child: CircleAvatar(
-                      radius: 81,
+                      radius: 85,
                       child: Container(
                         child: Column(
                           children: [
@@ -272,8 +259,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 padding: EdgeInsets.only(
                                   top:
                                       MediaQuery.of(context).size.height * 0.11,
-                                  bottom:
-                                      MediaQuery.of(context).size.height * 0.1,
+                                  bottom: MediaQuery.of(context).size.height *
+                                      0.060,
                                   right:
                                       MediaQuery.of(context).size.width * 0.1,
                                   left: MediaQuery.of(context).size.width * 0.1,
@@ -301,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 40,
               ),
               Column(
                 children: [
@@ -312,7 +299,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 4,
+              ),
+              Column(
+                children: [
+                  Text(
+                    "Time Elapsed",
+                    style:
+                        TextStyle(color: Colors.blueAccent, letterSpacing: 2),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 27,
               ),
               if (_selectedVpn != null)
                 Padding(
@@ -321,7 +320,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     left: MediaQuery.of(context).size.width * 0.415,
                   ),
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.08,
+                    height: MediaQuery.of(context).size.height * 0.065,
                     width: MediaQuery.of(context).size.width * 0.0001,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -339,7 +338,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
 
               SizedBox(
-                height: 2,
+                height: 27,
               ),
               TextButton(
                 onPressed: () async {
