@@ -2,6 +2,8 @@
 *.class
 *.log
 *.pyc
+*.lock
+*.gradle
 *.swp
 .DS_Store
 .atom/
@@ -42,5 +44,4 @@ app.*.map.json
 
 # Exceptions to above rules.
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-.gradle/
-.lock/
+
